@@ -6,69 +6,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
       max-width: 800px;
       margin: 0 auto;
       padding: 32px 16px 64px;
-      line-height: 1.6;
       color: #222;
-      background: #f7f7f8;
+      background: #fafafa;
     }
     h1, h2, h3 {
-      color: #111827;
+      font-weight: 600;
+      color: #111;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-    }
-    h3 {
-      margin-top: 1.5rem;
-      font-size: 1.05rem;
-    }
-    a {
-      color: #0f766e;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .muted {
-      color: #6b7280;
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.4rem; margin-top: 2rem; }
+    h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+    a { color: #0b5fff; }
+    small { color: #555; }
+    .muted { color: #666; }
+    .notice {
+      padding: 12px 16px;
+      background: #fff7e6;
+      border-left: 4px solid #f5a623;
+      margin: 1.5rem 0;
       font-size: 0.9rem;
-    }
-    ul {
-      padding-left: 1.3rem;
-    }
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-        "Liberation Mono", "Courier New", monospace;
-      background: #e5e7eb;
-      padding: 0 4px;
-      border-radius: 3px;
-      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Privacy Policy</h1>
-    <p class="muted">
-      Last updated: <strong>YYYY-MM-DD</strong>
-    </p>
-  </header>
 
-  <section>
-    <p class="muted">
-      This template is provided for informational purposes only and does not
-      constitute legal advice. Privacy laws vary by jurisdiction and depend on
-      how you process data. You should review and adapt this policy with your
-      own legal counsel before publishing it.
-    </p>
-  </section>
+  <h1>Privacy Policy</h1>
+  <p><strong>AI Channel Copilot</strong></p>
+  <p><small>Effective date: <strong>[YYYY-MM-DD]</strong></small></p>
 
-  <sectio
+  <div class="notice">
+    <strong>Important:</strong> This template is provided for information only and does not constitute legal advice.
+    Privacy laws differ by jurisdiction and how you use data. You should review and adapt this policy with your own
+    legal counsel before publishing it.
+  </div>
+
+  <p>
+    This Privacy Policy explains how <strong>[Your Company Name]</strong> (“we”, “us”, or “our”) collects, uses,
+    and shares information when you install or use the
+    <strong>AI Channel Copilot</strong> app (“the App”) in connection with your Shopify store (“the Service”).
+    It also describes your choices and rights in relation to that information.
+  </p>
+
+  <h2>1. Who we are and how to contact us</h2>
+  <p>
+    The App is provided by <strong>[Your Company Name]</strong>, located at
+    <strong>[Your Company Address]</strong>.
+  </p>
+  <p>
+    If you have questions about this Privacy Policy or our data practices, you can contact us at:<br />
+    Email: <a href="mailto:[email protected]">[email protected]</a><br />
+    Postal address: <strong>[Your Company Address]</strong>
+  </p>
+
+  <h2>2. Relationship to Shopify and merchants</h2>
+  <p>
+    We build an analytics and reporting app that merchants choose to install in their Shopify stores.
+    When a merchant installs the App, Shopify provides us access to certain store data through the Shopify API,
+    according to the permissions approved by the merchant.
+  </p>
+  <p class="muted">
+    For most data about a merchant’s customers, we act as a <em>data processor/service provider</em> on behalf of the
+    merchant, who remains the data controller/owner of that data under applicable privacy laws.
+  </p>
+
+  <h2>3. Information we collect</h2>
+
+  <h3>3.1 Information about merchants and stores</h3>
+  <p>When you install and use the App, we may collect and process:</p>
+  <ul>
+    <li>Store information: store name, myshopify domain, storefront domain, primary currency and time zone.</li>
+    <li>Account information: merchant name, email address, preferred language, and contact details.</li>
+    <li>Billing information: subscription plan, billing status, and payment identifiers (handled via Shopify Billing;
+        we do not store your full payment card details).</li>
+    <li>Configuration data: App settings, rules, preferences, and other data you choose to store in the App.</li>
+  </ul>
+
+  <h3>3.2 Information about orders and customers</h3>
+  <p>
+    To provide AI-channel analytics and attribution, we access certain data about your orders and customers
+    from Shopify, including:
+  </p>
+  <ul>
+    <li>Order details: order ID, order date, currency, line items, quantities, prices, discounts, taxes, and refunds.</li>
+    <li>Basic customer details: customer ID, name, email, phone number (if provided), billing and shipping country/region.</li>
+    <li>Traffic attributes: referring site, landing page URL, UTM parameters, tags and note attributes related to the order.</li>
+  </ul>
+  <p>
+    We use this data only to provide and improve the Service (for example, to detect and label orders that likely came
+    from AI assistants such as ChatGPT, Perplexity, Gemini, or Microsoft Copilot).
+  </p>
+
+  <h3>3.3 Technical and usage data</h3>
+  <p>
+    When you access the App (for example, from the Shopify admin), our systems may automatically log certain information,
+    such as:
+  </p>
+  <ul>
+    <li>IP address and approximate location;</li>
+    <li>Browser type, operating system, and device information;</li>
+    <li>App usage data, such as pages viewed, features used, and time spent;</li>
+    <li>Error logs and performance metrics.</li>
+  </ul>
+
+  <h3>3.4 Communications</h3>
+  <p>
+    If you contact us for support or feedback, we may collect the information that you choose to provide,
+    such as your name, email address, and the content of your message.
+  </p>
+
+  <h2>4. How we use information</h2>
+  <p>We use the information described above for the following purposes:</p>
+  <ul>
+    <li>To provide, operate, and maintain the App and the Service.</li>
+    <li>To analyze orders and traffic data and generate AI-channel reports, dashboards, and exports.</li>
+    <li>To configure and customize the App for each merchant store.</li>
+    <li>To provide merchant support, answer questions, and resolve technical issues.</li>
+    <li>To monitor performance, troubleshoot, and improve the App (including usage analytics and A/B testing).</li>
+    <li>To detect, prevent, and respond to fraud, abuse, or security incidents.</li>
+    <li>To comply with legal obligations and enforce our agreements.</li>
+  </ul>
+
+  <h2>5. Legal bases for processing (EEA/UK visitors)</h2>
+  <p>
+    If you are located in the European Economic Area, the United Kingdom, or a similar jurisdiction with data protection
+    laws that require a legal basis for processing, we rely on the following legal bases:
+  </p>
+  <ul>
+    <li><strong>Contract:</strong> Processing is necessary to perform our contract with the merchant (for example, to provide the Service).</li>
+    <li><strong>Legitimate interests:</strong> We process data to maintain and improve the App, prevent fraud and abuse,
+        and understand how merchants use the Service, where these interests are not overridden by data-subject rights.</li>
+    <li><strong>Consent:</strong> In some cases, we may rely on your consent (for example, when you sign up for optional marketing emails).
+        You can withdraw consent at any time.</li>
+  </ul>
+
+  <h2>6. How we share information</h2>
+  <p>We do <strong>not</strong> sell merchant or customer personal data.</p>
+  <p>We may share information in the following situations:</p>
+  <ul>
+    <li>
+      <strong>Service providers:</strong> We use trusted third-party vendors to host our infrastructure, store data,
+      send emails, monitor performance, and provide customer support tools. These providers only process data on our
+      behalf and under contract.
+    </li>
+    <li>
+      <strong>Business transfers:</strong> If we are involved in a merger, acquisition, financing, or sale of all or a
+      portion of our business, your information may be transferred as part of that transaction, subject to appropriate safeguards.
+    </li>
+    <li>
+      <strong>Legal requirements:</strong> We may disclose information if we believe it is reasonably necessary to comply
+      with law or legal process, to protect the rights, property, or safety of us, our users, or others, or to enforce our agreements.
+    </li>
+  </ul>
+
+  <h2>7. Data retention</h2>
+  <p>
+    We retain personal information for as long as necessary to provide the Service to the merchant and to satisfy
+    the purposes described in this Policy, unless a longer retention period is required or permitted by law.
+  </p>
+  <p>
+    After a merchant uninstalls the App, we generally delete or anonymize store data within
+    <strong>[X days/months]</strong>, except where we are legally required to keep it longer (for example, for tax, accounting,
+    or audit purposes). Aggregated or de-identified data that no longer identifies an individual may be retained for analytics
+    and product improvement.
+  </p>
+
+  <h2>8. International data transfers</h2>
+  <p>
+    We may store and process information in countries other than the country where the merchant or customers are located.
+    These countries may have data-protection laws that are different from the laws of your country.
+  </p>
+  <p>
+    Where required by law, we implement appropriate safeguards for international transfers, such as contractual protections.
+  </p>
+
+  <h2>9. Your rights and choices</h2>
+  <h3>9.1 Merchant rights</h3>
+  <p>
+    As a merchant using the App, you may access, correct, update, or delete certain information directly through the App
+    or by contacting us. If you wish to uninstall the App, you can do so from your Shopify admin at any time.
+  </p>
+
+  <h3>9.2 End-customer rights</h3>
+  <p>
+    If you are a customer of a merchant using our App and wish to exercise privacy rights (such as access, correction, or deletion),
+    please contact the merchant directly. We will support the merchant in responding to such requests as required under
+    Shopify’s policies and applicable law.
+  </p>
+
+  <h3>9.3 Rights under specific privacy laws</h3>
+  <p>
+    Depending on where you live, you may have additional rights under local privacy laws (for example, GDPR, UK GDPR,
+    and certain U.S. state privacy laws), such as the right to request access to or deletion of your personal data or to
+    object to certain processing. To exercise these rights, please contact us using the details in Section 1.
+  </p>
+
+  <h2>10. Security</h2>
+  <p>
+    We use appropriate technical and organizational measures to protect personal information against accidental or unlawful
+    destruction, loss, alteration, or unauthorized access. However, no online service can guarantee absolute security.
+  </p>
+
+  <h2>11. Children</h2>
+  <p>
+    The App and Service are intended for use by merchants and business users. They are not directed to children, and we do not
+    knowingly collect personal information from children under the age of 13 (or a higher age where required by local law).
+  </p>
+
+  <h2>12. Changes to this Privacy Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational,
+    legal, or regulatory reasons. When we make material changes, we will notify merchants by email or within the App
+    and update the “Effective date” at the top of this page.
+  </p>
+
+  <h2>13. Contact information</h2>
+  <p>
+    If you have any questions or complaints about this Privacy Policy or our data practices, please contact us at:
+  </p>
+  <p>
+    <strong>[Your Company Name]</strong><br />
+    Email: <a href="mailto:[email protected]">[email protected]</a><br />
+    Address: <strong>[Your Company Address]</strong>
+  </p>
+
+</body>
+</html>
